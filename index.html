@@ -4,76 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube clone</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-
-        p{
-            font-family: 'Roboto', Arial;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-        .thumbnail{
-            width: 100%;
-        }
-
-       .search-bar{
-        display: block;
-       }
-
-       .video-title{
-        margin-top: 0;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        margin-bottom: 12px;
-       }
-
-       .video-info-grid{
-        display: grid;
-        grid-template-columns: 50px 1fr;
-       }
-
-
-       .profile-picture{
-        width: 40px;
-        border-radius: 50px;
-       }
-
-       .thumbnail-row{
-        margin-bottom: 12px;
-       }
-
-       .video-author,
-       .video-stats{
-        font-size: 12px;
-       color:rgb( 96, 96, 96);
-       }
-
-       .video-author{
-        margin-bottom: 4px;
-       }
-
-       .video-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 40px;
-       }
-
-      
-
-    </style>
 </head>
 <body>
-    <input class="search-bar" type="text" placeholder="Search">
+
+    <div class="header">
+        <div class="left-section">
+            <img src="icons/hamburger-menu (1).svg" class="hamburger-menu">
+            <img src="icons/youtube-logo (1).svg" class="youtube-logo">
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-link">
+                <img src="iconsforsidebar/home.svg" alt="">
+                <div> Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="iconsforsidebar/explore.svg" alt="">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="iconsforsidebar/subscriptions.svg" alt="">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="iconsforsidebar/originals.svg" alt="">
+                <div>Originals</div>
+            </div> 
+            <div class="sidebar-link">
+                <img src="iconsforsidebar/youtube-music.svg" alt="">
+                <div>Youtube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="iconsforsidebar/library.svg" alt="">
+                <div>Library</div>
+            </div>
+        </div>
+
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-button">
+                <img src="icons/search (1).svg" class="search-icon">
+            </button>
+            <button class="voice-search-button">
+                <img src="icons/voice-search-icon (1).svg" class="voice-search-icon">
+            </button>
+        </div>
+
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img src="icons/upload (1).svg" class="upload-icon">
+            </div>
+            <img src="icons/youtube-apps (1).svg" class="youtube-apps-icon">
+            <div class="notifications-icon-container">
+                <img src="icons/notifications (1).svg" class="notifications-icon">
+                <div class="notifications-count">3</div>
+            </div>
+            <img src="icons/iconic.jpeg" class="current-user-picture">
+        </div>
+    </div>
+   
 <div class="video-grid">
 
     <div class="video-preview">
         <div class="thumbnail-row">
             <img class="thumbnail" src="Images.png/small.png">
+            <div class="video-time">16:10</div>
         </div>
         <div class="video-info-grid">
         <div class="channel-picture">
@@ -90,6 +89,7 @@
     <div class="video-preview">
         <div class="thumbnail-row">
             <img class="thumbnail" src="Images.png/notion.png">
+            <div class="video-time">7:13</div>
         </div>
         <div class="video-info-grid">
         <div class="channel-picture">
@@ -106,6 +106,7 @@
     <div class="video-preview">
         <div class="thumbnail-row">
             <img class="thumbnail" src="Images.png/image1.png">
+            <div class="video-time">24:10</div>
         </div>
         <div class="video-info-grid">
         <div class="channel-picture">
@@ -122,11 +123,13 @@
     <div class="video-preview">
         <div class="thumbnail-row">
             <img class="thumbnail" src="Images.png/image2.png">
+            <div class="video-time">9:38</div>
         </div>
         <div class="video-info-grid">
         <div class="channel-picture">
             <img src="Images.png/fayefilms.png" class="profile-picture">
         </div>
+
         <div class="video-info">
             <p class="video-title">How I made $10,000 as a teen (and how you can too)</p>
             <p class="video-author">Fayefilms</p>
@@ -138,6 +141,7 @@
     <div class="video-preview">
         <div class="thumbnail-row">
             <img class="thumbnail" src="Images.png/popeyes.png">
+            <div class="video-time">9:28</div>
         </div>
         <div class="video-info-grid">
         <div class="channel-picture">
@@ -154,6 +158,7 @@
     <div class="video-preview">
         <div class="thumbnail-row">
             <img class="thumbnail" src="Images.png/eliminate.png">
+            <div class="video-time">10:55</div>
         </div>
         <div class="video-info-grid">
         <div class="channel-picture">
